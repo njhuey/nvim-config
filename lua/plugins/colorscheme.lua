@@ -40,7 +40,7 @@ return {
         treesitter_context = true,
         which_key = true,
       },
-    flavour = "macchiato",
+      flavour = "macchiato",
     },
   },
   {
