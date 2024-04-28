@@ -180,6 +180,11 @@ return {
             { "[[", desc = "Prev Reference" },
         },
     },
+    {
+        'nvim-telescope/telescope-fzf-native.nvim',
+        build =
+        'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+    },
     -- Fuzzy finder.
     -- The default key bindings to find files will use Telescope's
     -- `find_files` or `git_files` depending on whether the
