@@ -1,4 +1,5 @@
 return {
+    -- bottom terminal
     {
         'akinsho/toggleterm.nvim',
         version = "v2.10.0",
@@ -300,7 +301,6 @@ return {
             { "<c-s>", mode = { "c" },           function() require("flash").toggle() end,            desc = "Toggle Flash Search" },
         },
     },
-
     -- Flash Telescope config
     {
         "nvim-telescope/telescope.nvim",
@@ -331,5 +331,13 @@ return {
                 mappings = { n = { s = flash }, i = { ["<c-s>"] = flash } },
             })
         end,
+    },
+    -- Comment.nvim
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        },
+        lazy = false,
     }
 }
